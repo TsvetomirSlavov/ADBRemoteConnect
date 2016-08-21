@@ -15,7 +15,8 @@ public class Main
         String ipAddress = "";
 
         // Retrieve the user preference node for the package
-        Preferences prefs = Preferences.userNodeForPackage(Main.class);
+        Preferences systemRoot = Preferences.userRoot();
+        Preferences prefs = systemRoot.node("dk/appdictive/adbconnect");
 
         // Get the value of the preference;
         // default value is returned if the preference does not exist
