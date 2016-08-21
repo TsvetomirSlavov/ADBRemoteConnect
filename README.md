@@ -9,7 +9,10 @@ Usage
 First connect your Android device with USB to your PC, then use the ADB Remote Connect.
 
 To use it run the jar file found here: /out/artifacts/Java_jar/Java.jar
+
 Either double click to run, or run from command line to see the system output.
+
+On connect the IP will be remembered, and on next run of the jar the previously succesfull IP address will be attempted with ADB connect, thereby not requiring the USB cable at all if your network address stays the same.
 
 
 License
